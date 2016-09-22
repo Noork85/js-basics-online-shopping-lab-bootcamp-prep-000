@@ -31,8 +31,8 @@ var viewCart = function() {
   } else if(cart.length > 0) {
       for(var i = 0; i < cart.length; i++) {
         for(var item in cart[i]){
-		if(cart[i] === cart.length-1) {
-          str+= ` ${item} at ${cart[i][item]}`;
+		if(i === cart.length-1) {
+          str+= ` ${item} at ${cart[i][item]}.`;
         } else {
           str+= ` ${item} at ${cart[i][item]},`;
         }
